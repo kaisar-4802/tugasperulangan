@@ -7,7 +7,15 @@ public class TugasPerulangan2{
         int N  = input.nextInt();
 
         // Pekerjaan anda dimulai dari sini
-
+        pembelianPerhari *= 28;
+        while (stokAwal < pembelianPerhari) {
+            stokAwal = -1;
+            break;
+        }
+        while (stokAwal >pembelianPerhari) {
+            stokAwal -= pembelianPerhari;
+            break;
+        }
         //Pekerjaan anda berakhir disini
     }
 }
